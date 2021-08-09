@@ -1,0 +1,14 @@
+.footer{
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: gainsboro;
+    border-top: 1px solid #000;
+}
+
+div.center{
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    height: 100%;
+}

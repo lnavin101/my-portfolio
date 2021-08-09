@@ -1,0 +1,99 @@
+ .timeline{
+    background-image: url('../../assets/images/arrow.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+ }
+
+ .exp-box{
+    box-shadow: 0px 0px 5px 0px #000;
+    background: #fff;
+    opacity: 1;
+    min-height: 350px;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+ }
+
+ .exp-box:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+ }
+
+ .exp-box .logo{
+    border-radius: 10px;
+    max-height: 100px;
+   max-width: 250px;
+   width: auto;
+   height: auto;
+   background-size: cover;
+   background-position: center;
+}
+
+.exp-box .main-text{
+   align-items: center;
+   justify-content: center;
+   display: inline-block;
+   text-align: center;
+}
+
+ .exp-box .header{
+   position: absolute;
+   top: 0px;
+   text-align: center;
+   color: #000;
+   margin-bottom: 5px;
+   align-items: center;
+   justify-content: center;
+ }
+
+ mat-card{
+   min-height: 300px;
+   width: 300px;
+   align-items: center;
+   justify-content: center;
+   display: inline-block;
+ }
+
+ mat-card img{
+   object-fit: contain;
+   height: 180px;
+ }
+
+ mat-card:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+ }
+
+ .card-overlay-top{
+   position: absolute;
+   top: 5px;
+   left:-40px;
+   bottom: 10px;
+   height: 35px;
+   width: 180px;
+   background-color: cadetblue;
+   border-radius: 200px;
+   clip-path: inset(0px 24px round 15px 0);
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   opacity: 0.9;
+ }
+
+ .card-overlay.shadow{
+   filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.15));
+ }
+
+.card-overlay.text{
+   padding: 5px 5px 5px 40px;
+   font-size: 20px;
+   align-items: center;
+   justify-content: center;
+   display: inline-block;
+   font-style: italic;
+}
