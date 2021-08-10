@@ -1,8 +1,11 @@
 .header{
+    z-index: 1;
+    position: fixed;
     min-height: 80px;
+    top: 0;
     width: 100%;
     background-color: #000;
-    border-bottom: 1px solid #000;
+    /* border-bottom: 1px solid #fff; */
     opacity: 0.93;
 }
 
@@ -19,8 +22,8 @@
     min-width: 100px;
     margin: 15px 0px 0px 35px;
     background-color: transparent;
-    border: 1px solid #fff;
-    color: #fff;
+    border: 1px solid #ff652f;
+    color: #ff652f;
     font-size: 20px;
 }
 

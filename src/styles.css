@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; background-image: url('assets/images/star_background.jpg');}
+html, body { height: 100%; background-image: url('assets/images/star_background_dark.jpg');}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .main-bg{
@@ -41,17 +41,29 @@ div.center-page{
 
 .about-box {
     position: absolute;
+    margin: auto;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    margin: auto;
-    width: 75%;
-    height: 60%;
-    background: #404040;
-    box-shadow: 0px 1px 5px 2px #000;
-    border: 10px solid #fff;
-    opacity: 0.97;
+    width: 100%;
+    height: 70%;
+    /* background: #404040; */
+    background:rgb(27, 27, 27);
+    /* box-shadow: 0px 0px 2px 1px #fff; */
+    /* border: 10px solid #fff; */
+    opacity: 0.93;
+}
+
+.content-box{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 70%;
+    background:rgb(27, 27, 27);
+    opacity: 0.93;
+    margin-top: 80px;
 }
 
 div .my-name{
@@ -66,12 +78,13 @@ div .my-name{
     margin: auto;
     color: #fff;
     opacity: 0.035;
+    /* -webkit-text-stroke: 5px black; */
 }
 
 div .my-last-name{
     text-align: right;
     text-justify: inter-character;
-    font-size: 6vw;
+    font-size: 7vw;
     text-align:center;
     padding: 22vw 0vw 0vw 0vw;
     position: absolute;
@@ -82,6 +95,7 @@ div .my-last-name{
     margin: auto;
     color: #fff;
     opacity: 0.035;
+    /* -webkit-text-stroke: 3px black; */
 }
 
 .text-curly{
@@ -94,7 +108,8 @@ div .my-last-name{
 
 section{
     width: 100%;
-    height: 700px;
+    height: 500px;
+    margin-bottom: 50px;
 }
 
 .box{
@@ -110,13 +125,39 @@ section{
     font-size: 3vw;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
-    color: #fff;
+    color: #ff652f;
 }
 
 .title-line{
     margin: auto;
     width: 70px;
     height: 5px;
-    background: #fff;
+    background: #ff652f;
     margin-bottom: 30px;
 }
+
+.container-fluid{
+    flex: 1;
+    margin: auto;
+    width: 100%;
+    height: 70%;
+    background: rgb(27, 27, 27);
+    box-shadow: 0px 1px 5px 2px #000;
+    opacity: 0.93;
+    display: inline-grid;
+}
+
+.container-fluid > .row{
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+
+.section-title{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+
+
+
