@@ -1,13 +1,14 @@
 .header{
     z-index: 1;
-    position: fixed;
+    position: relative;
     min-height: 80px;
     top: 0;
     width: 100%;
-    background-color: #000;
+    background-color: rgb(0, 0, 0);
     /* border-bottom: 1px solid #fff; */
     opacity: 0.90;
 }
+
 
 .img-circle{
     background-color: #fff;
@@ -18,12 +19,11 @@
 }
 
 .menu{
-    height: 40px;
+    max-height: 40px;
     min-width: 100px;
-    margin: 15px 0px 0px 35px;
     background-color: transparent;
-    border: 1px solid #ff652f;
-    color: #ff652f;
+    border: 1px solid #ffffff;
+    color: #ffffff;
     font-size: 20px;
 }
 

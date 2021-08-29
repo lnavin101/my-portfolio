@@ -13,6 +13,8 @@ import { MatCardModule } from '@angular/material/card';
 import { ExperienceComponent } from './experience/experience.component';
 import { SkillsComponent } from './skills/skills.component';
 
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +30,8 @@ import { SkillsComponent } from './skills/skills.component';
     BrowserAnimationsModule,
     NgbModule,
     MatCardModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MDBBootstrapModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
