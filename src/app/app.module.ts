@@ -11,9 +11,11 @@ import { HomeComponent } from './home/home.component';
 
 import { MatCardModule } from '@angular/material/card';
 import { ExperienceComponent } from './experience/experience.component';
-import { SkillsComponent } from './skills/skills.component';
 
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { SkillsModule } from './skills/skills.module';
+import { ContactComponent } from './contact/contact.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -22,11 +24,13 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     FooterComponent,
     HomeComponent,
     ExperienceComponent,
-    SkillsComponent
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    SharedModule,
+    SkillsModule,
     BrowserAnimationsModule,
     NgbModule,
     MatCardModule,

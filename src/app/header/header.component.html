@@ -11,22 +11,45 @@
     </nav>
 </div> -->
 
-
 <!--Navbar-->
-    <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark black sticky-top">
+    <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark unique-color-dark sticky-top scrolling-navbar">
 
         <!-- Collapsible content -->
         <links>
             <!-- Links -->
             <ul class="navbar-nav mx-auto text-center">
                 <li class="nav-item active text-center ml-3 mr-3 mt-2 mb-2">
-                    <a class="nav-link waves-light" mdbWavesEffect>About<span class="sr-only">(current)</span></a>
+                    <a class="nav-link waves-light" mdbWavesEffect routerLink="/home">About<span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item text-center ml-3 mr-3 mt-2 mb-2">
-                    <a class="nav-link waves-light" mdbWavesEffect>What I Do</a>
-                </li>
-                <li class="nav-item text-center ml-3 mr-3 mt-2 mb-2">
-                    <a class="nav-link waves-light" mdbWavesEffect>Contact</a>
+                <!-- <li class="nav-item text-center ml-3 mr-3 mt-2 mb-2">
+                    <a class="nav-link waves-light" mdbWavesEffect routerLink="/projects">What I Do</a>
+                </li> -->
+
+                <li class="nav-item text-center ml-3 mr-3 mt-2 mb-2 dropdown mega-dropdown" mdbDropdown>
+                    <a mdbDropdownToggle class="nav-link dropdown-toggle no-caret" aria-haspopup="true"
+                      aria-expanded="false">What I Do</a>
+                    <div class="dropdown-menu mega-menu v-2 row z-depth-1 blue-grey lighten-4">
+                      <div class="row mx-md-2 mx-1">
+                        <div class="sub-menu mt-2 mb-2 text-left">
+                          <ul class="list-unstyled">
+                            <li class="">
+                              <a class="menu-item pl-0 pr-0 pt-0 pb-0" href="">
+                                <a class="nav-link waves-light font-weight-bolder" mdbWavesEffect routerLink="/skills/projects">Projects</a>
+                              </a>
+                            </li>
+                            <li class="">
+                              <a class="menu-item pl-0 pr-0 pt-0 pb-0" href="">
+                                <a class="nav-link waves-light font-weight-bolder" mdbWavesEffect routerLink="/skills/interests">Interests</a>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="nav-item text-center ml-3 mr-3 mt-2 mb-2">
+                    <a class="nav-link waves-light" mdbWavesEffect routerLink="/contact">Contact</a>
                 </li>
             </ul>
             <!-- Links -->
