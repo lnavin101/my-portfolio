@@ -1,7 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; background-image: url('assets/images/star_background_blur.jpg');}
+/* html, body { height: 100%; background-image: url('assets/images/star_background_white.png');} */
+html, body { height: 100%; background-color: #272727;}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Responsive for mobile*/
+.visible-mobile {
+    display: none !important;
+}
+
+@media (max-width: 489px) {
+    .visible-mobile {
+        display: inline !important;
+    }
+
+    .hidden-mobile {
+        display: none !important;
+    }
+}
 
 .main-bg{
     background: midnightblue;
@@ -9,6 +25,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .bg-gray{
     background-color: rgb(206, 206, 206);
+}
+
+.bg-dark-gray{
+    background-color: #272727;
 }
 
 .text-center{
@@ -42,19 +62,38 @@ div.center-page{
     justify-content: center;
 }
 
-.my-image{
+.my-image-full{
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 22vw;
-    margin: auto;
     max-height: 100%;
-    max-width: 100%;
+}
+
+.my-image-small{
+    border: 3px solid white;
+    max-height: 60vw;
+    max-width: 60vw;
+}
+
+.my-image-icon{
+    border: 3px solid white;
+}
+
+.img-responsive{
+    height: calc(75% + 1vh);
+    max-height: 17vh;
+    max-width: 17vw;
+}
+
+.img-responsive-sm{
+    height: calc(50% + 0.3vh);
+    width: calc(50% + 0.3vw);
+}
+
+.img-responsive-lg{
+    height: calc(100% + 1.8vh);
+    width: calc(100% + 1.8vw);
 }
 
 .about-box {
-    position: relative;
     margin: auto;
     top: 0;
     bottom: 0;
@@ -64,8 +103,7 @@ div.center-page{
     min-width: 100vw;
     /* background: #404040; */
     background:rgb(27, 27, 27);
-    /* box-shadow: 0px 0px 2px 1px #fff; */
-    /* border: 10px solid #fff; */
+    box-shadow: 0px 0px 2px 1px rgb(0, 0, 0);
     opacity: 0.93;
 }
 
@@ -75,48 +113,47 @@ div.center-page{
     right: 0;
     min-height: 70vh;
     min-width: 100vw;
+    /* box-shadow: 0px 0px 2px 1px rgb(0, 0, 0); */
     background:rgb(27, 27, 27);
     opacity: 0.93;
 }
 
 div .my-name{
-    font-size: 24vw;
-    text-align: center;
-    padding: 10vw 0vw 0vw 0vw;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: -18px;
-    right: 0px;
-    margin: auto;
-    color: #fff;
-    opacity: 0.035;
+    text-align: left;
+    color: #FF652F;
+    font-family: cursive;
+    line-height: 1.2;
     /* -webkit-text-stroke: 5px black; */
 }
 
-div .my-last-name{
-    text-align: right;
+.text-curly{
+    text-align: left;
     text-justify: inter-character;
-    font-size: 7vw;
-    text-align:center;
-    padding: 22vw 0vw 0vw 0vw;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    color: #fff;
-    opacity: 0.035;
-    /* -webkit-text-stroke: 3px black; */
+    line-height: 1.2;
+    color: white;
+    opacity: 0.93;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
 }
 
-.text-curly{
-    font-size: 2vw;
-    font-family: cursive;
-    text-align: right;
-    text-justify: inter-character;
-    line-height: 0.9;
+.text-responsive{
+    font-size: calc(75% + 1vw + 1vh);
+}
+
+
+.text-responsive-xs{
+    font-size: calc(25% + 0.7vw + 0.7vh);
+    line-height: 2rem;
+}
+
+.text-responsive-sm{
+    font-size: calc(50% + 0.3vw + 0.3vh);
+    line-height: 2rem;
+}
+
+.text-responsive-lg{
+    font-size: calc(100% + 1.8vw + 1.8vh);
+    line-height: 2rem;
 }
 
 .box{
@@ -241,3 +278,29 @@ div .my-last-name{
     opacity: 0.70;
     line-height: 5rem;
 }
+
+.contact-list{
+    display: block;
+    font-size: 35px;
+    line-height: 2rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    color: #000;
+}
+
+.orange-icon{
+    color: #FF652F;
+}
+
+.white-icon{
+    color: white;
+    opacity: 0.7;
+}
+
+a.btn-outline.btn{
+    border: 2px solid #ff652f;
+}
+
+
+
+
