@@ -1,0 +1,130 @@
+[
+    {
+        "title": "Loyalty Management System",
+        "subTitle": "Current Project",
+        "description": "Points based rewarding system for building brand loyalty",
+        "list": [
+            {
+                "name": "",
+                "responsibilities": [
+                    "Developing front end website architecture using AngularJS & Angular framework",
+                    "Developing NodeJS REST API’s for integration with website",
+                    "Creating and enhancing MongoDB based microservices using Mongoose & NodeJS",
+                    "Creating & Designing Reporting solutions based on business requirements using Jasper Reports & PostgresSQL",
+                    "Preparing & Deploying application packages on AWS using Docker",
+                    "Troubleshoot & Fix issues/bugs on UAT, SIT & Production environments",
+                    "Provide Level 2 Support for application related issues"
+                ],
+                "order": "1"
+            }
+        ],
+        "stack": [
+            {
+                "name": "Angular",
+                "icon": "assets/images/logo/skills/angular.png"
+            },
+            {
+                "name": "Javascript",
+                "icon": "assets/images/logo/skills/js.png"
+            },
+            {
+                "name": "NodeJS",
+                "icon": "assets/images/logo/skills/node.png"
+            },
+            {
+                "name": "MongoDB",
+                "icon": "assets/images/logo/skills/mongo.png"
+            },
+            {
+                "name": "MySQL",
+                "icon": "assets/images/logo/skills/sql.png"
+            }
+        ],
+        "expand": true
+    },
+    {
+        "title": "Integrated Cloud based E-Management (ICE) Locking System for Hotel & BnB Solutions",
+        "subTitle": "Final Year Project",
+        "description": "IOT based automated door lock system that operates based on random pin generated",
+        "list": [
+            {
+                "name": "Desktop Application (WPF)",
+                "responsibilities": [
+                    "Developed application as a solution for admins to manage the booking system"
+                ],
+                "order": "1"
+            },
+            {
+                "name": "Android Application",
+                "responsibilities": [
+                    "Developed booking system for users to perform and manage their booking as well as random key generation to access their rooms"
+                ],
+                "order": "2"
+            },
+            {
+                "name": "Automated Door Lock",
+                "responsibilities": [
+                    "Created an Arduino based automated door lock prototype to be accessed through the random key"
+                ],
+                "order": "3"
+            }
+        ],
+        "stack": [
+            {
+                "name": "C#",
+                "icon": "assets/images/logo/skills/csharp.png"
+            },
+            {
+                "name": "Arduino",
+                "icon": "assets/images/logo/skills/arduino.png"
+            },
+            {
+                "name": "Java",
+                "icon": "assets/images/logo/skills/java.png"
+            }
+        ],
+        "expand": false
+    },
+    {
+        "title": "Smart Locker",
+        "subTitle": "Internship",
+        "description": "",
+        "list": [
+            {
+                "name": "Desktop Application (WPF)",
+                "responsibilities": [
+                    "Developed desktop application that controls the communication between the microcontroller and RFID sensor to provide access to the assigned lockers."
+                ],
+                "order": "1"
+            }
+        ],
+        "stack": [
+            {
+                "name": "C#",
+                "icon": "assets/images/logo/skills/csharp.png"
+            }
+        ],
+        "expand": false
+    },
+    {
+        "title": "Ticket Monitoring System",
+        "subTitle": "Internship",
+        "description": "",
+        "list": [
+            {
+                "name": "Desktop Application (WPF)",
+                "responsibilities": [
+                    "Developed desktop application to view the tickets raised and closed in which each of them have a different priority"
+                ],
+                "order": "1"
+            }
+        ],
+        "stack": [
+            {
+                "name": "C#",
+                "icon": "assets/images/logo/skills/csharp.png"
+            }
+        ],
+        "expand": false
+    }
+]

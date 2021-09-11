@@ -1,1 +1,46 @@
-<app-in-progress></app-in-progress>
+<!-- <app-in-progress></app-in-progress> -->
+<section class="page bg-dark-gray">
+    <div class="d-flex justify-content-center mt-3">
+        <div class="section-title">
+            <h1 class="sub-title">Projects</h1>
+            <div class="title-line"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 col-md-6 mb-3" *ngFor="let project of projectList">
+            <mat-accordion class="z-depth-2">
+                <mat-expansion-panel [expanded]="project.expand">
+                  <mat-expansion-panel-header>
+                    <mat-panel-title class="font-weight-bolder">
+                      {{project.title}}
+                    </mat-panel-title>
+                    <mat-panel-description>
+                      {{project.subTitle}}
+                    </mat-panel-description>
+                  </mat-expansion-panel-header>
+                  <hr class="my-2">
+                    <h4 class="font-weight-bold">Description:</h4>
+                    <p class="font-weight-light">{{project.description || '-'}}</p>
+                    
+                    <h4 class="font-weight-bold">Key Responsibilities:</h4>
+                    <div *ngFor="let list of project.list">
+                        <h4 class="ml-2 font-weight-normal">{{list.name}}</h4>
+                        <p *ngFor="let job of list.responsibilities">
+                            <i class="fas fa-code ml-2">
+                                <a class="font-weight-light ml-2">{{job}}</a>
+                            </i>
+                        </p>
+                    </div>
+
+                    <h4 class="font-weight-bolder">Tech Stack:</h4>
+                    <div class="row">
+                        <div class="col-2 col-sm-3 col-md-1" *ngFor="let stack of project.stack">
+                            <img class="logo-icon-small skills-overlay-shadow" src={{stack.icon}}>
+                            <!-- <h6 class="pt-2">{{stack.name}}</h6> -->
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+              </mat-accordion>
+        </div>
+    </div>
+</section>
