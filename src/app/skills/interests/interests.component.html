@@ -1,1 +1,49 @@
-<app-in-progress></app-in-progress>
+<!-- <app-in-progress></app-in-progress> -->
+<section class="page bg-dark-gray">
+    <div class="d-flex justify-content-center mt-3">
+        <div class="section-title">
+            <h1 class="sub-title">Interests</h1>
+            <div class="title-line"></div>
+        </div>
+    </div>
+    <div class="row">
+        <!-- [animation]="'slide'" -->
+        <mdb-carousel id="design-carousel"  [isControls]="true" class="carousel-multi-item multi-animation offset-md-1 w-100" [type]="'carousel-multi-item'">
+            <mdb-carousel-item *ngFor="let item of designs; let i = index">
+                <div class="col-md-3" *ngFor="let interest of item; let interestIdx = index">
+                <mdb-card class="my-1">
+                    <mdb-card-img [src]="interest.url" alt="interest image"></mdb-card-img>
+                    <mdb-card-body>
+                    <mdb-card-title>
+                        <h4>{{interest.title}}</h4>
+                    </mdb-card-title>
+                    <p>{{interest.description}}</p>
+                    </mdb-card-body>
+                </mdb-card>
+                </div>
+            </mdb-carousel-item>
+        </mdb-carousel>
+    </div>
+    <hr class="my-2">
+    <div class="row">
+        <mdb-carousel id="video-carousel" [isControls]="true" class="carousel-multi-item multi-animation mx-auto w-100" [type]="'carousel-multi-item'"
+        [animation]="'slide'">
+            <mdb-carousel-item *ngFor="let item of videos; let i = index">
+                <div class="col-md-6" *ngFor="let interest of item; let interestIdx = index">
+                <mdb-card class="my-1">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" [src]="interest.url | safe" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      </div>
+                    <mdb-card-body>
+                    <mdb-card-title>
+                        <h4>{{interest.title}}</h4>
+                    </mdb-card-title>
+                    <p>{{interest.description}}</p>
+                    </mdb-card-body>
+                </mdb-card>
+                </div>
+            </mdb-carousel-item>
+        </mdb-carousel>
+    </div>
+    <hr class="my-2">
+</section>
