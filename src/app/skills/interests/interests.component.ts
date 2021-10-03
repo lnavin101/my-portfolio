@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, HostListener, ViewChild } from '@angular/core';
 import { InterestService } from '../../shared/services/interest.service';
 import { Interest } from '../../shared/models/interest.model';
 
@@ -8,6 +8,7 @@ import { Interest } from '../../shared/models/interest.model';
   styleUrls: ['./interests.component.css']
 })
 export class InterestsComponent implements OnInit {
+  @ViewChild('videoCarousel', {static: false}) videoCarousel: any;
 
   imgAnimation = 'slide';
   screenWidth: number = 0;
@@ -32,15 +33,10 @@ export class InterestsComponent implements OnInit {
       this.designList = data.filter(data=>{return data.type === 'design'});
       this.videoList = data.filter(data=>{return data.type === 'video'});
 
-      if(this.screenWidth <= 320){
+      if(this.screenWidth <= 600){
         this.imgAnimation = 'fade';
         this.designs = this.chunk(this.designList, 1);
         this.videos = this.chunk(this.videoList, 1);
-      }
-      else if(this.screenWidth >320 && this.screenWidth <=600){
-        this.imgAnimation = 'slide';
-        this.designs = this.chunk(this.designList, 2);
-        this.videos = this.chunk(this.videoList, 2);
       }
       else if(this.screenWidth > 600 && this.screenWidth <=900){
         this.imgAnimation = 'slide';
@@ -63,6 +59,14 @@ export class InterestsComponent implements OnInit {
       this.ngOnInit();
 
     this.screenWidth = window.innerWidth;
+  }
+
+  nextVideo(){
+    this.videoCarousel.nextSlide();
+  }
+
+  prevVideo(){
+    this.videoCarousel.previousSlide();
   }
 
 }

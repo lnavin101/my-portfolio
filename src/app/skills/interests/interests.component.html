@@ -27,8 +27,8 @@
     </div>
     <hr class="my-2">
     <div class="row">
-        <mdb-carousel id="video-carousel" [isControls]="true" class="carousel-multi-item multi-animation mx-auto w-100" [type]="'carousel-multi-item'"
-        [animation]="'slide'">
+        <mdb-carousel #videoCarousel id="video-carousel" [isControls]="true" class="carousel-multi-item multi-animation mx-auto w-100" [type]="'carousel-multi-item'"
+            [animation]="'slide'" [interval]=0>
             <mdb-carousel-item *ngFor="let item of videos; let i = index">
                 <div class="col-md-6 col-12" *ngFor="let interest of item; let interestIdx = index">
                 <mdb-card class="my-1">
@@ -45,6 +45,14 @@
                 </div>
             </mdb-carousel-item>
         </mdb-carousel>
+        <div class="d-flex justify-content-center mt-3 w-100">
+            <a class="mr-5" style="color: #3b5998;" (click)="prevVideo()" role="button">
+                <i class="fas fa-chevron-left fa-lg"></i>
+            </a>
+            <a style="color: #3b5998;" (click)="nextVideo()" role="button">
+                <i class="fas fa-chevron-right fa-lg"></i>
+            </a>
+        </div>
     </div>
     <hr class="my-2">
 </section>
