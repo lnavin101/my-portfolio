@@ -7,9 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  selected = 'home';
+  selectedSub = '';
+
+  constructor(){}
 
   ngOnInit(): void {
+    
+  }
+
+  selectMenu(path: string){
+    this.selected = path;
+  }
+
+  selectSubMenu(subPath: string){
+    this.selectedSub = subPath;
   }
 
 }

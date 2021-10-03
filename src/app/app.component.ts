@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Router, NavigationEnd } from '@angular/router'; 
 
 declare let ga: Function;
 
@@ -11,13 +10,5 @@ declare let ga: Function;
 export class AppComponent {
   title = 'my-portfolio';
 
-  constructor(public router: Router){
-    this.router.events.subscribe(event => {
-
-      if (event instanceof NavigationEnd) {
-        ga('set', 'page', event.urlAfterRedirects);
-        ga('send', 'pageview');
-      }
-    });
-  }
+  constructor(){}
 }

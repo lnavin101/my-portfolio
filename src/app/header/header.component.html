@@ -1,43 +1,28 @@
-
-<!-- <div class='header'>
-    <nav class="navbar navbar-expand-lg">
-        <div id="navbarSupportedContent">
-            <div class="text-center">
-                <button class="menu">About</button>
-                <button class="menu">What I Do</button>
-                <button class="menu">Contact</button>
-            </div>
-        </div>
-    </nav>
-</div> -->
-
 <!--Navbar-->
-    <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark unique-color-dark sticky-top scrolling-navbar">
+    <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark unique-color-dark sticky-top">
 
         <!-- Collapsible content -->
         <links>
             <!-- Links -->
             <ul class="navbar-nav mx-auto text-center">
-                <li class="nav-item active text-center ml-3 mr-3 mt-2 mb-2">
+                <li class="nav-item active text-center ml-3 mr-3 mt-2 mb-2" (click)="selectMenu('home')" [ngClass]="{'active': selected === 'home'}">
                     <a class="nav-link waves-light" mdbWavesEffect routerLink="/home">About<span class="sr-only">(current)</span></a>
                 </li>
-                <!-- <li class="nav-item text-center ml-3 mr-3 mt-2 mb-2">
-                    <a class="nav-link waves-light" mdbWavesEffect routerLink="/projects">What I Do</a>
-                </li> -->
 
-                <li class="nav-item text-center ml-3 mr-3 mt-2 mb-2 dropdown mega-dropdown" mdbDropdown>
+                <li class="nav-item text-center ml-3 mr-3 mt-2 mb-2 dropdown mega-dropdown" mdbDropdown 
+                    (click)="selectMenu('skills')" [ngClass]="{'active': (selected === 'skills' && selectedSub != '')}">
                     <a mdbDropdownToggle class="nav-link dropdown-toggle no-caret" aria-haspopup="true"
                       aria-expanded="false">What I Do</a>
                     <div class="dropdown-menu mega-menu v-2 row z-depth-1 blue-grey lighten-4">
-                      <div class="row mx-md-2 mx-1">
-                        <div class="sub-menu mt-2 mb-2 text-left">
+                      <div class="row w-100">
+                        <div class="sub-menu text-left w-100">
                           <ul class="list-unstyled">
-                            <li class="">
+                            <li (click)="selectSubMenu('projects')" [ngClass]="{'active': selectedSub === 'projects'}">
                               <a class="menu-item pl-0 pr-0 pt-0 pb-0" href="">
                                 <a class="nav-link waves-light font-weight-bolder" mdbWavesEffect routerLink="/skills/projects">Projects</a>
                               </a>
                             </li>
-                            <li class="">
+                            <li (click)="selectSubMenu('interests')" [ngClass]="{'active': selectedSub === 'interests'}">
                               <a class="menu-item pl-0 pr-0 pt-0 pb-0" href="">
                                 <a class="nav-link waves-light font-weight-bolder" mdbWavesEffect routerLink="/skills/interests">Interests</a>
                               </a>
@@ -48,7 +33,7 @@
                     </div>
                   </li>
 
-                  <li class="nav-item text-center ml-3 mr-3 mt-2 mb-2">
+                  <li class="nav-item text-center ml-3 mr-3 mt-2 mb-2" (click)="selectMenu('contact')" [ngClass]="{'active': selected === 'contact'}">
                     <a class="nav-link waves-light" mdbWavesEffect routerLink="/contact">Contact</a>
                 </li>
             </ul>

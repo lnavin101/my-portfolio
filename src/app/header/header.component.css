@@ -44,5 +44,9 @@ button.menu:hover{
     transform: translate(-50%, -50%);
   }
 
+.sub-menu > ul > li:hover{
+    background-color: #919191;
+}
+
 
 
