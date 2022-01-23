@@ -8,10 +8,10 @@
     </div>
     <div class="row">
         <!-- [animation]="'slide'" -->
-        <mdb-carousel id="design-carousel"  [isControls]="false" class="carousel-multi-item multi-animation mx-auto w-100" [type]="'carousel-multi-item'"
+        <mdb-carousel #designCarousel id="design-carousel"  [isControls]="true"  class="carousel-multi-item multi-animation mx-auto w-100" [type]="'carousel-multi-item'"
         [animation]="imgAnimation">
             <mdb-carousel-item *ngFor="let item of designs; let i = index" class="d-flex justify-content-center">
-                <div class="col-md-3 col-sm-6 col-12" *ngFor="let interest of item; let interestIdx = index">
+                <div class="col-sm-6 col-md-3 col-12" *ngFor="let interest of item; let interestIdx = index">
                 <mdb-card class="my-1">
                     <mdb-card-img [src]="interest.url" alt="interest image"></mdb-card-img>
                     <mdb-card-body>
@@ -24,6 +24,14 @@
                 </div>
             </mdb-carousel-item>
         </mdb-carousel>
+        <div *ngIf="imgAnimation != 'none'" class="d-flex justify-content-center mt-3 w-100">
+            <a class="mr-5" style="color: #3b5998;" (click)="prevImage()" role="button">
+                <i class="fas fa-chevron-left fa-lg"></i>
+            </a>
+            <a style="color: #3b5998;" (click)="nextImage()" role="button">
+                <i class="fas fa-chevron-right fa-lg"></i>
+            </a>
+        </div>
     </div>
     <hr class="my-2">
     <div class="row">

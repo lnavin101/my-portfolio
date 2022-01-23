@@ -9,8 +9,9 @@ import { Interest } from '../../shared/models/interest.model';
 })
 export class InterestsComponent implements OnInit {
   @ViewChild('videoCarousel', {static: false}) videoCarousel: any;
+  @ViewChild('designCarousel', {static: false}) designCarousel: any;
 
-  imgAnimation = 'slide';
+  imgAnimation = 'none';
   screenWidth: number = 0;
   designList: Interest[] = [];
   videoList: Interest[] = [];
@@ -39,13 +40,13 @@ export class InterestsComponent implements OnInit {
         this.videos = this.chunk(this.videoList, 1);
       }
       else if(this.screenWidth > 600 && this.screenWidth <=900){
-        this.imgAnimation = 'slide';
-        this.designs = this.chunk(this.designList, 2);
+        this.imgAnimation = 'fade';
+        this.designs = this.chunk(this.designList, 3);
         this.videos = this.chunk(this.videoList, 2);
       }
       else{
         this.imgAnimation = 'none';
-        this.designs = this.chunk(this.designList, 3);
+        this.designs = this.chunk(this.designList, 4);
         this.videos = this.chunk(this.videoList, 2);
       }
       
@@ -67,6 +68,14 @@ export class InterestsComponent implements OnInit {
 
   prevVideo(){
     this.videoCarousel.previousSlide();
+  }
+
+  nextImage(){
+    this.designCarousel.nextSlide();
+  }
+
+  prevImage(){
+    this.designCarousel.previousSlide();
   }
 
 }
