@@ -22,6 +22,16 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
+## Deployment to Github Pages
+
+- Before implement SSH key
+> Run `ng deploy --base-href=/my-portfolio/` to publish to Github pages
+
+- Latest (after implement SSH key)
+> Run `ng deploy --base-href=https://lnavin101.github.io/my-portfolio/` 
+- Run command from Git Bash to authenticate using local SSH key
+- (with full url as relative path is pointing to local resource automatically)
+
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
