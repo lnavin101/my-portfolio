@@ -47,5 +47,7 @@ jobs:
           git config user.email "navinletchumanan@gmail.com"
           git config user.name "lnavin101"
       - name: Deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           npm run deploy
