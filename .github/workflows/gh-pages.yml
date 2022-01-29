@@ -45,7 +45,7 @@ jobs:
           npm run build -- --prod
       - run: |
           git config user.email "navinletchumanan@gmail.com"
-          git config user.name "Navin Letchumanan"
+          git config user.name "lnavin101"
       - name: Deploy
         run: |
           npm run deploy
