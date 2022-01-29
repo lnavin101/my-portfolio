@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "ng deploy --no-silent --base-href=https://lnavin101.github.io/my-portfolio/"
+    "deploy": "ng deploy --no-silent --base-href=https://lnavin101.github.io/my-portfolio/ --name='lnavin101' --email='navinletchumanan@gmail.com'"
   },
   "private": true,
   "dependencies": {
