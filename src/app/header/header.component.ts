@@ -13,7 +13,7 @@ export class HeaderComponent implements OnInit {
   constructor(){}
 
   ngOnInit(): void {
-    
+    this.appendClass();
   }
 
   selectMenu(path: string){
@@ -22,6 +22,10 @@ export class HeaderComponent implements OnInit {
 
   selectSubMenu(subPath: string){
     this.selectedSub = subPath;
+  }
+
+  appendClass(){
+    return 'navbar-expand-md'
   }
 
 }
