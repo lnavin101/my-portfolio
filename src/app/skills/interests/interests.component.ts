@@ -1,13 +1,14 @@
-import { Component, OnInit, HostListener, ViewChild } from '@angular/core';
+import { Component, OnInit, HostListener, ViewChild, AfterViewInit } from '@angular/core';
 import { InterestService } from '../../shared/services/interest.service';
 import { Interest } from '../../shared/models/interest.model';
+import { NgxSpinnerService } from "ngx-spinner";
 
 @Component({
   selector: 'app-interests',
   templateUrl: './interests.component.html',
   styleUrls: ['./interests.component.css']
 })
-export class InterestsComponent implements OnInit {
+export class InterestsComponent implements OnInit, AfterViewInit {
   @ViewChild('videoCarousel', {static: false}) videoCarousel: any;
   @ViewChild('designCarousel', {static: false}) designCarousel: any;
 
@@ -16,7 +17,7 @@ export class InterestsComponent implements OnInit {
   designList: Interest[] = [];
   videoList: Interest[] = [];
 
-  constructor(private interestService: InterestService){
+  constructor(private interestService: InterestService, private spinner: NgxSpinnerService){
     this.getScreenSize();
   }
 
@@ -30,6 +31,9 @@ export class InterestsComponent implements OnInit {
     return R;
   }
   ngOnInit() {
+    // display spinner
+    this.spinner.show();
+
     this.interestService.getInterests().subscribe(data=>{
       this.designList = data.filter(data=>{return data.type === 'design'});
       this.videoList = data.filter(data=>{return data.type === 'video'});
@@ -49,8 +53,16 @@ export class InterestsComponent implements OnInit {
         this.designs = this.chunk(this.designList, 4);
         this.videos = this.chunk(this.videoList, 2);
       }
-      
+
     });
+  }
+
+  ngAfterViewInit(){
+    // hide spinner after content rendered
+    setTimeout(() => {
+      /** spinner ends after 5 seconds */
+      this.spinner.hide();
+    }, 3000);
   }
 
   @HostListener('window:resize', ['$event'])

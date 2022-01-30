@@ -4,19 +4,21 @@ import { InProgressComponent } from './components/in-progress/in-progress.compon
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { HttpClientModule } from '@angular/common/http';
-
+import { NgxSpinnerModule } from "ngx-spinner";
 
 @NgModule({
   declarations: [InProgressComponent, PageNotFoundComponent],
   imports: [
     CommonModule,
     HttpClientModule,
-    MatExpansionModule
+    MatExpansionModule,
+    NgxSpinnerModule
   ],
   exports: [
     InProgressComponent,
     PageNotFoundComponent,
-    MatExpansionModule
+    MatExpansionModule,
+    NgxSpinnerModule
   ]
 })
 export class SharedModule { }
