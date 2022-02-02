@@ -1,6 +1,22 @@
 <div class="timeline">
     <div class="row justify-content-center">
-        <div class="col-md-4 col-10 pt-5">
+        <div class="col-md-4 col-10 pt-5" *ngFor="let job of jobList">
+            <mat-card>
+                <mat-card-title>
+                    <div class="card-overlay shadow"> 
+                        <span class="card-overlay-top" [ngStyle]="{'background': job.isCurrent ? '#FF652F': 'cadetblue'}">
+                            <p class="card-overlay text">{{job.jobType}}</p>
+                        </span>
+                    </div>
+                </mat-card-title>
+                <img class="pt-10 pl-2 pr-2" mat-card-image src={{job.companyLogo}}>
+                <mat-card-title-group>
+                    <mat-card-title>{{job.jobTitle}}</mat-card-title>
+                    <mat-card-subtitle>{{job.period}}</mat-card-subtitle>
+                </mat-card-title-group>
+            </mat-card>
+        </div>
+        <!-- <div class="col-md-4 col-10 pt-5">
             <mat-card>
                 <mat-card-title>
                     <div class="card-overlay shadow"> 
@@ -47,6 +63,6 @@
                     <mat-card-subtitle>2021 - Present</mat-card-subtitle>
                 </mat-card-title-group>
             </mat-card>
-        </div>
+        </div> -->
     </div>
 </div>

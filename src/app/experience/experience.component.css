@@ -23,7 +23,7 @@
 
  .exp-box:hover{
    transform: scale(1.1);
-   cursor: pointer;
+   /* cursor: pointer; */
  }
 
  .exp-box .logo{
@@ -67,7 +67,7 @@
 
  mat-card:hover{
    transform: scale(1.1);
-   cursor: pointer;
+   /* cursor: pointer; */
  }
 
  .card-overlay-top{
@@ -77,7 +77,6 @@
    bottom: 10px;
    height: 35px;
    width: 180px;
-   background-color: cadetblue;
    border-radius: 200px;
    clip-path: inset(0px 24px round 15px 0);
    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
