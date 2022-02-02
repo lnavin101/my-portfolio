@@ -5,3 +5,13 @@
 .skills-overlay-shadow{
     filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.15));
   }
+
+mat-expansion-panel-header{
+    height: 100% !important;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+.divider{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.54);
+}

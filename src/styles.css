@@ -317,3 +317,7 @@ a.btn-outline.btn{
     justify-content: flex-end;
   }
 
+hr{
+    border: unset;
+}
+
