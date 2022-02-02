@@ -1,0 +1,24 @@
+[
+    {
+        "jobTitle": "Engineer Assistant",
+        "jobType": "Internship",
+        "period": "2018 (6 months)",
+        "companyLogo": "assets/images/logo/sophic_logo.png",
+        "order": 1
+    },
+    {
+        "jobTitle": "Full Stack Developer",
+        "jobType": "Full time",
+        "period": "2019 - 2021",
+        "companyLogo": "assets/images/logo/fusionex_logo.webp",
+        "order": 2
+    },
+    {
+        "jobTitle": "Full Stack Developer",
+        "jobType": "Full time",
+        "period": "2021 - Present",
+        "companyLogo": "assets/images/logo/etiqa_logo.png",
+        "isCurrent": true,
+        "order": 3
+    }
+]
