@@ -16,6 +16,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { SkillsModule } from './skills/skills.module';
 import { ContactComponent } from './contact/contact.component';
 import { SharedModule } from './shared/shared.module';
+import { AchievementComponent } from './achievement/achievement.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SharedModule } from './shared/shared.module';
     FooterComponent,
     HomeComponent,
     ExperienceComponent,
-    ContactComponent
+    ContactComponent,
+    AchievementComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,81 @@
+ .honors{
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+ }
+ 
+ mat-card{
+   height: 100%;
+    max-height: 300px;
+   max-width: 650px;
+   align-items: center;
+   justify-content: center;
+   padding: 0;
+   border-radius: 2rem;
+ }
+
+ mat-card img{
+   object-fit: contain;
+   /* height: 180px; */
+ }
+
+ mat-card:hover{
+   transform: scale(1.1);
+   /* cursor: pointer; */
+ }
+
+ .mat-card-image:first-child{
+     margin-top: unset;
+ }
+
+ mat-card-title{
+     margin-top: 1rem;
+ }
+
+ .mat-card-title:not(:first-child){
+     margin-top: 0.5rem;
+     font-size: 20px;
+     font-weight: 400;
+ }
+
+ mat-card .row{
+   height: 100%;
+ }
+
+ .card-overlay-top{
+   position: absolute;
+   top: 5px;
+   left:-40px;
+   bottom: 10px;
+   height: 35px;
+   width: 180px;
+   border-radius: 200px;
+   clip-path: inset(0px 24px round 15px 0);
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   opacity: 0.9;
+ }
+
+ .card-overlay.shadow{
+   filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.15));
+ }
+
+.card-overlay.text{
+   padding: 5px 5px 5px 40px;
+   font-size: 20px;
+   align-items: center;
+   justify-content: center;
+   display: inline-block;
+   font-style: italic;
+}
+
+.medal-img{
+    max-height: 150px;
+}
+
+.honors .row{
+    margin-right: -15px;
+    /* margin-left: -15px; */
+}
