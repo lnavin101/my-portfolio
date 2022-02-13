@@ -1,0 +1,25 @@
+[
+    {
+        "title": "Aspiring Engineers Project Competition 2019",
+        "position_id": 3,
+        "position": "2nd Runner Up",
+        "location": "Flextronics, Penang",
+        "time": "May 2019",
+        "associatedLogo": [
+            "assets/images/logo/flex_logo.png",
+            "assets/images/logo/usm_logo.jpeg"
+        ],
+        "galleryUrls": []
+    },
+    {
+        "title": "PIXEL 2019",
+        "position_id": 1,
+        "position": "Gold Category Winner",
+        "location": "USM, Penang",
+        "time": "May 2019",
+        "associatedLogo": [
+            "assets/images/logo/usm_logo.jpeg"
+        ],
+        "galleryUrls": []
+    }
+]
