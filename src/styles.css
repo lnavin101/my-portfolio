@@ -229,33 +229,6 @@ div .my-name{
     margin-left: unset;
 }
 
-.navbar-dark.unique-color-dark{
-    opacity: 0.9;
-}
-
-.nav-item{
-    border: 2px solid #ff652f;
-    font-size: 20px;
-}
-
-.navbar-nav .nav-item .nav-link {
-    color: #ff652f !important;
-}
-
-.navbar-nav .nav-item .sub-menu .nav-link{
-    color: #000000 !important;
-}
-
-.nav-item.active{
-    color:white;
-}
-
-.navbar .dropdown-menu a{
-    padding: unset;
-    font-size: unset;
-}
-
-
 .page-header-bg{
     margin-top: 40px;
     text-align: center;
