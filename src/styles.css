@@ -83,13 +83,10 @@ div.center-page{
 }
 
 .my-image-small{
-    border: 3px solid white;
-    max-height: 60vw;
-    max-width: 60vw;
-}
-
-.my-image-icon{
-    border: 3px solid white;
+    /* border: 3px solid white; */
+    max-height: 17rem;
+    max-width: 17rem;
+    margin-bottom: -3rem;
 }
 
 .logo-icon-small{
@@ -98,9 +95,10 @@ div.center-page{
 }
 
 .img-responsive{
-    height: calc(75% + 1vh);
-    max-height: 17vh;
-    max-width: 17vw;
+    height: calc(75% + 1rem);
+    max-height: 17rem;
+    max-width: 17rem;
+    margin-bottom: -2rem;
 }
 
 .img-responsive-sm{
@@ -225,7 +223,7 @@ div .my-name{
 }
 
 .row{
-    /* margin-right: unset; */
+    margin-right: unset;
     margin-left: unset;
 }
 

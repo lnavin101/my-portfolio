@@ -37,11 +37,20 @@ import { NgxSpinnerService } from "ngx-spinner";
 })
 export class HomeComponent implements OnInit, AfterViewInit {
 
+  chosenMemoji = '';
+  memojiCollection = [
+    "assets/images/navin1.png",
+    "assets/images/navin2.png",
+    "assets/images/navin3.png",
+    "assets/images/navin5.png",
+  ];
+
   constructor(private spinner: NgxSpinnerService) { }
 
   ngOnInit(): void {
     // display spinner
     this.spinner.show();
+    this.chooseMemoji();
   }
 
   ngAfterViewInit(){
@@ -50,6 +59,14 @@ export class HomeComponent implements OnInit, AfterViewInit {
       /** spinner ends after 5 seconds */
       this.spinner.hide();
     }, 1000);
+  }
+
+  chooseMemoji(){
+    this.chosenMemoji = this.memojiCollection[this.randomNum() - 1];
+  }
+
+  randomNum(){
+    return Math.floor(Math.random() * ((this.memojiCollection.length) - 1 + 1)) + 1;
   }
 
 }
