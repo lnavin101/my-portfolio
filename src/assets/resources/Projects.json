@@ -1,7 +1,47 @@
 [
     {
-        "title": "Loyalty Management System",
+        "title": "All Things Auto (ATA)",
         "subTitle": "Current Project",
+        "description": "End to end solution to provide best roadside assistance for the users",
+        "list": [
+            {
+                "name": "",
+                "responsibilities": [
+                    "Develop, maintain & release mobile application using Flutter framework for both Android & iOS",
+                    "Use MongoDB Aggregation (MQL) in processing data for analytics purposes",
+                    "Developing NodeJS REST API’s using NestJs framework whenever necessary",
+                    "Take part in frontend web development for Angular whenever necessary"
+                ],
+                "order": "1"
+            }
+        ],
+        "stack": [
+            {
+                "name": "Flutter",
+                "icon": "assets/images/logo/skills/flutter.png"
+            },
+            {
+                "name": "NodeJS",
+                "icon": "assets/images/logo/skills/node.png"
+            },
+            {
+                "name": "MongoDB",
+                "icon": "assets/images/logo/skills/mongo.png"
+            },
+            {
+                "name": "Javascript",
+                "icon": "assets/images/logo/skills/js.png"
+            },
+            {
+                "name": "Angular",
+                "icon": "assets/images/logo/skills/angular.png"
+            }
+        ],
+        "expand": true
+    },
+    {
+        "title": "Loyalty Management System",
+        "subTitle": "Previous Project",
         "description": "Points based rewarding system for building brand loyalty",
         "list": [
             {
@@ -40,7 +80,7 @@
                 "icon": "assets/images/logo/skills/sql.png"
             }
         ],
-        "expand": true
+        "expand": false
     },
     {
         "title": "Integrated Cloud based E-Management (ICE) Locking System for Hotel & BnB Solutions",
