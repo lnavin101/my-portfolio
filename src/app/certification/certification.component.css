@@ -1,0 +1,40 @@
+.cert{
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.cert-box{
+    opacity: 1;
+    max-height: 250px;
+    max-width: 200px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+ }
+
+ .cert-overlay-shadow{
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.15));
+  }
+
+  .cert-box:hover{
+    transform: scale(1.1);
+    cursor: pointer
+  }
+ 
+ .cert-box .logo{
+    max-height: 100%;
+    max-width: 100%;
+ }
+ 
+ .cert-box .header{
+      text-align: center;
+      color: #000;
+  }
+ 
+ .cert-box .content{
+     color:#000;
+ }

@@ -17,6 +17,8 @@ import { SkillsModule } from './skills/skills.module';
 import { ContactComponent } from './contact/contact.component';
 import { SharedModule } from './shared/shared.module';
 import { AchievementComponent } from './achievement/achievement.component';
+import { CertificationComponent } from './certification/certification.component';
+import { SafePipe } from './shared/pipes/safe.pipe';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { AchievementComponent } from './achievement/achievement.component';
     HomeComponent,
     ExperienceComponent,
     ContactComponent,
-    AchievementComponent
+    AchievementComponent,
+    CertificationComponent
   ],
   imports: [
     BrowserModule,

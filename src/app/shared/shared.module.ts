@@ -5,9 +5,10 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { MatExpansionModule } from '@angular/material/expansion';
 import { HttpClientModule } from '@angular/common/http';
 import { NgxSpinnerModule } from "ngx-spinner";
+import { SafePipe } from './pipes/safe.pipe';
 
 @NgModule({
-  declarations: [InProgressComponent, PageNotFoundComponent],
+  declarations: [InProgressComponent, PageNotFoundComponent, SafePipe],
   imports: [
     CommonModule,
     HttpClientModule,
@@ -18,7 +19,8 @@ import { NgxSpinnerModule } from "ngx-spinner";
     InProgressComponent,
     PageNotFoundComponent,
     MatExpansionModule,
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    SafePipe
   ]
 })
 export class SharedModule { }

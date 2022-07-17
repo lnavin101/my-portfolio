@@ -11,8 +11,7 @@ import { SafePipe } from '../shared/pipes/safe.pipe';
   declarations: [
     SkillsComponent, 
     ProjectsComponent,
-    InterestsComponent,
-    SafePipe
+    InterestsComponent
   ],
   imports: [
     CommonModule,
