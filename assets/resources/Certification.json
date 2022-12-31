@@ -1,6 +1,12 @@
 [
     {
         "logo": "assets/images/logo/certs/psm1.png",
+        "name": "Professional Scrum Master 1",
         "url": "https://www.credly.com/badges/779d7c1b-710e-4931-abc7-1e5ca04f2299/public_url"
+    },
+    {
+        "logo": "assets/images/logo/certs/icagile.png",
+        "name": "ICAgile Certified Professional",
+        "url": "https://www.credly.com/badges/f20d5fc5-ef68-4183-91df-4b920948dcc1/public_url"
     }
 ]
