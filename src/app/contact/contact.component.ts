@@ -3,6 +3,7 @@ import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { NgxSpinnerService } from "ngx-spinner";
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-contact',
@@ -11,7 +12,7 @@ import { Observable } from 'rxjs';
 })
 export class ContactComponent implements OnInit, AfterViewInit {
 
-  // devCardUrl: string = "https://github.com/lnavin101/lnavin101/blob/eb728b8b4e192cac6972f68f7d869c12910df178/devcard.svg";
+  devCardUrl: string = "https://raw.githubusercontent.com/lnavin101/lnavin101/eb728b8b4e192cac6972f68f7d869c12910df178/devcard.svg";
   devCardImg: any;
 
   constructor(private spinner: NgxSpinnerService, private readonly domSanitizer: DomSanitizer, private http: HttpClient) { }
@@ -19,8 +20,13 @@ export class ContactComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {
     // display spinner
     this.spinner.show();
-    this.getImage(window.location.origin + '/devcard').toPromise().then((data) => this.displayImage(data));
-    //this.devCardImg = this.domSanitizer.bypassSecurityTrustUrl(window.location.origin + '/devcard');
+
+    if(environment.production){
+      this.getImage(this.devCardUrl).toPromise().then((data) => this.displayImage(data));
+    }
+    else{
+      this.getImage(window.location.origin + '/devcard').toPromise().then((data) => this.displayImage(data));
+    }
   }
 
   ngAfterViewInit() {
