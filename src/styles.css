@@ -101,6 +101,11 @@ div.center-page{
     margin-bottom: -2rem;
 }
 
+.img-responsive-md{
+    height: calc(50% + 0.45vh);
+    width: calc(50% + 0.45vw);
+}
+
 .img-responsive-sm{
     height: calc(50% + 0.3vh);
     width: calc(50% + 0.3vw);

@@ -13,14 +13,16 @@ import { SafePipe } from './pipes/safe.pipe';
     CommonModule,
     HttpClientModule,
     MatExpansionModule,
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    HttpClientModule
   ],
   exports: [
     InProgressComponent,
     PageNotFoundComponent,
     MatExpansionModule,
     NgxSpinnerModule,
-    SafePipe
+    SafePipe,
+    HttpClientModule
   ]
 })
 export class SharedModule { }

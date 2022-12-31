@@ -1,9 +1,10 @@
 <div class="cert">
     <div class="row justify-content-center">
-        <div class="col-md-12" *ngFor="let cert of certificationList">
+        <div class="col-6" *ngFor="let cert of certificationList">
             <div class="cert-box">
-                <div class="header pt-5">
+                <div class="header">
                     <img class="logo cert-overlay-shadow" src="{{cert.logo}}" (click)="openCert(cert.url)">
+                    <h1 class="text-white pt-2">{{cert.name}}</h1>
                 </div>
             </div>
         </div>
