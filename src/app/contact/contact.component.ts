@@ -12,7 +12,7 @@ import { environment } from 'src/environments/environment';
 })
 export class ContactComponent implements OnInit, AfterViewInit {
 
-  devCardUrl: string = "https://raw.githubusercontent.com/lnavin101/lnavin101/eb728b8b4e192cac6972f68f7d869c12910df178/devcard.svg";
+  devCardUrl: string = "https://raw.githubusercontent.com/lnavin101/lnavin101/main/devcard.svg";
   devCardImg: any;
 
   constructor(private spinner: NgxSpinnerService, private readonly domSanitizer: DomSanitizer, private http: HttpClient) { }
