@@ -1,7 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 
 /* html, body { height: 100%; background-image: url('assets/images/star_background_white.png');} */
-html, body { height: 100%; background-color: #272727;}
+html, body { 
+    height: 100%; 
+    background-color: var(--bg-color);
+}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 /* Responsive for mobile*/
@@ -17,6 +20,14 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     .hidden-mobile {
         display: none !important;
     }
+}
+
+.p-splitter{
+    background-color: var(--splitter-color)
+}
+
+.mat-card{
+    background-color: var(--bg-card-color);
 }
 
 .main-bg{
@@ -44,7 +55,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 .text-white{
-    color: #fff;
+    color: var(--bg-text-color);
 }
 
 .text-white.text-center{
@@ -137,7 +148,7 @@ div.center-page{
     min-height: 25rem;
     min-width: 100%;
     /* box-shadow: 0px 0px 2px 1px rgb(0, 0, 0); */
-    background:rgb(27, 27, 27);
+    background: var(--bg-content-box);
     opacity: 0.93;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -155,7 +166,7 @@ div .my-name{
     text-align: left;
     text-justify: inter-character;
     line-height: 1.2;
-    color: white;
+    color: var(--bg-text-curly);
     opacity: 0.93;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: lighter;

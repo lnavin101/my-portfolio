@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ThemeService } from '../shared/services/theme.service';
 
 @Component({
   selector: 'app-header',
@@ -9,8 +10,9 @@ export class HeaderComponent implements OnInit {
 
   selected = 'home';
   selectedSub = '';
+  darkMode: boolean = false;
 
-  constructor(){}
+  constructor(private themeService: ThemeService){}
 
   ngOnInit(): void {
     this.appendClass();
@@ -26,6 +28,11 @@ export class HeaderComponent implements OnInit {
 
   appendClass(){
     return 'navbar-expand-md'
+  }
+
+  switchTheme() {
+    this.darkMode = !this.darkMode;
+    this.themeService.switchTheme(this.darkMode ? 'bootstrap4-dark-blue': 'nova-accent');
   }
 
 }

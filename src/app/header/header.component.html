@@ -44,6 +44,15 @@
             <!-- Links -->
         </links>
         <!-- Collapsible content -->
+        <!-- <button type="button" (click)="switchTheme()" class="btn btn-outline-primary waves-effect" aria-hidden="true">
+          <i *ngIf="!darkMode" class="fas fa-cloud-moon theme-icon"></i>
+          <i *ngIf="darkMode" class="fas fa-cloud-sun theme-icon"></i>
+        </button> -->
 
+        <!-- <p-button *ngIf="!darkMode" (click)="switchTheme()" label="" icon="fas fa-cloud-moon" iconPos="center"></p-button>
+        <p-button *ngIf="darkMode" (click)="switchTheme()" label="" icon="fas fa-cloud-sun" iconPos="center"></p-button> -->
+
+        <button pButton type="button" *ngIf="darkMode" (click)="switchTheme()" icon="fas fa-cloud-sun" iconPos="top" class="p-element p-ripple p-button-rounded p-button-warning p-button p-component p-button-icon-only p-button-outlined p-button-lg"></button>
+        <button pButton type="button" *ngIf="!darkMode" (click)="switchTheme()" icon="fas fa-cloud-moon" iconPos="top" class="p-element p-ripple p-button-rounded p-button-secondary p-button p-component p-button-icon-only p-button-outlined p-button-lg"></button>
     </mdb-navbar>
 <!--/.Navbar-->

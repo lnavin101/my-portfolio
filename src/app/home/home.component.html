@@ -1,5 +1,31 @@
 <section class="my-5">
-    <div class="row content-box z-depth-2">
+    <p-splitter layout="vertical">
+        <ng-template pTemplate>
+            <div class="col-md-4 d-flex justify-content-center">
+                <img src={{chosenMemoji}} class="img-fluid my-image-full hidden-mobile">
+                <img src="assets/images/navin15.png" class="img-fluid my-image-small visible-mobile mt-2">
+            </div>
+            <div class="col-md-6 mx-auto my-auto pr-6">
+                <div class="row">
+                    <p class="my-name first-name-expand pt-5 text-responsive-lg">Navin Letchumanan</p>
+                </div>
+                <div class="row">
+                    <p class="text-curly mt-5 text-responsive">Passionate full stack developer seeking to be an expert in
+                        what I do while getting the best out of myself with more than 3 years of experience and a vast
+                        knowledge in Angular & Flutter for frontend web and mobile development as well as NodeJS & MongoDB
+                        for backend development.
+                    </p>
+                </div>
+    
+                <!-- <h1 class="my-last-name last-name-expand">L E T C H U M A N A N</h1> -->
+            </div>
+        </ng-template>
+        <!-- <ng-template pTemplate>
+            Panel 2
+        </ng-template> -->
+    </p-splitter>
+    
+    <!-- <div class="row content-box z-depth-2">
         <div class="col-md-4 d-flex justify-content-center">
             <img src={{chosenMemoji}} class="img-fluid my-image-full hidden-mobile">
             <img src="assets/images/navin15.png" class="img-fluid my-image-small visible-mobile mt-2">
@@ -16,9 +42,8 @@
                 </p>
             </div>
 
-            <!-- <h1 class="my-last-name last-name-expand">L E T C H U M A N A N</h1> -->
         </div>
-    </div>
+    </div> -->
     <hr class="my-5">
     <div class="row">
         <div class="section-title">

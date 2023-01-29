@@ -6,6 +6,9 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { HttpClientModule } from '@angular/common/http';
 import { NgxSpinnerModule } from "ngx-spinner";
 import { SafePipe } from './pipes/safe.pipe';
+import { SplitterModule } from 'primeng/splitter';
+import { ButtonModule } from 'primeng/button';
+import { MegaMenuModule } from 'primeng/megamenu';
 
 @NgModule({
   declarations: [InProgressComponent, PageNotFoundComponent, SafePipe],
@@ -14,7 +17,10 @@ import { SafePipe } from './pipes/safe.pipe';
     HttpClientModule,
     MatExpansionModule,
     NgxSpinnerModule,
-    HttpClientModule
+    HttpClientModule,
+    SplitterModule,
+    ButtonModule,
+    MegaMenuModule
   ],
   exports: [
     InProgressComponent,
@@ -22,7 +28,10 @@ import { SafePipe } from './pipes/safe.pipe';
     MatExpansionModule,
     NgxSpinnerModule,
     SafePipe,
-    HttpClientModule
+    HttpClientModule,
+    SplitterModule,
+    ButtonModule,
+    MegaMenuModule
   ]
 })
 export class SharedModule { }
